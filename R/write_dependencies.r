@@ -19,7 +19,11 @@
 write_dependencies <- function(pkg = ".") {
   pkg <- devtools::as.package(pkg)
   packages <- get_dependencies(pkg = pkg)
-  deps <- data.frame(type = "Imports", package = packages, version = "*")
+  if (length(packages) > 0) {
+    deps <- data.frame(type = "Imports", package = packages, version = "*")
+  } else {
+    deps <- data.frame(type = character(0), package = character(0), version = character(0))
+  }
   message("Updating ", pkg$package, " DESCRIPTION")
   desc::desc_set_deps(deps)
 }
