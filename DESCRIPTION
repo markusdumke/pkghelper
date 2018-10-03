@@ -8,6 +8,11 @@ Description: Fill Imports section in DESCRIPTION file of R package by scanning c
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Depends: R (>= 3.5.0)
 RoxygenNote: 6.1.0
 Roxygen: list(markdown = TRUE)
+Imports: 
+    desc,
+    devtools,
+    magrittr,
+    purrr,
+    stringr

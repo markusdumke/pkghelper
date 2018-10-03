@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# pkghelper
+
+## Installation
+
+You can the package from Github with
+
+``` r
+devtools::install_github("markusdumke/pkghelper")
+```
+
+## Usage
+
+Currently the package includes functions which scan the R code in the package
+for all packages in use and writes these packages to the Imports field of the 
+DESCRIPTION file.
+
+Together with `devtools` and `roxygen2` this package helps to make the R package 
+generation process more automatically.
+
+```{r, eval = TRUE}
+library(pkghelper)
+# Get names of packages my package depends on
+get_dependencies()
+```
+
+```{r, eval = TRUE}
+# Modify DESCRIPTION
+write_dependencies()
+```
