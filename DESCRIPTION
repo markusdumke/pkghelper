@@ -1,0 +1,13 @@
+Package: pkghelper
+Type: Package
+Title: Manage package dependencies
+Version: 0.1.0
+Author: Markus Dumke
+Maintainer: Markus Dumke <markusdumke@gmail.com>
+Description: Fill Imports section in DESCRIPTION file of R package by scanning code for used packages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+RoxygenNote: 6.1.0
+Roxygen: list(markdown = TRUE)
