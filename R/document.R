@@ -1,6 +1,6 @@
-#' Document package
+#' Document package.
 #'
-#' Thsi function calls [devtools::document()] to update NAMESPACE and documentation
+#' This function calls [devtools::document()] to update NAMESPACE and documentation
 #' and then calls [write_dependencies()] to update the DESCRIPTION file.
 #'
 #' @inheritParams write_dependencies

@@ -2,7 +2,7 @@
 % Please edit documentation in R/document.R
 \name{document}
 \alias{document}
-\title{Document package}
+\title{Document package.}
 \usage{
 document(pkg = ".")
 }
@@ -11,7 +11,7 @@ document(pkg = ".")
 \code{\link{as.package}} for more information}
 }
 \description{
-Thsi function calls \code{\link[devtools:document]{devtools::document()}} to update NAMESPACE and documentation
+This function calls \code{\link[devtools:document]{devtools::document()}} to update NAMESPACE and documentation
 and then calls \code{\link[=write_dependencies]{write_dependencies()}} to update the DESCRIPTION file.
 }
 \examples{

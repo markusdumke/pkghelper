@@ -2,7 +2,7 @@
 % Please edit documentation in R/write_dependencies.r
 \name{write_dependencies}
 \alias{write_dependencies}
-\title{Update Imports section in DESCRIPTION file.}
+\title{Write dependency packages to DESCRIPTION.}
 \usage{
 write_dependencies(pkg = ".")
 }
@@ -11,9 +11,9 @@ write_dependencies(pkg = ".")
 \code{\link{as.package}} for more information}
 }
 \description{
-Scans all files in R/ for used packages (searching for :: syntax) and scans
-NAMESPACE file for import and importFrom. Then writes dependencies to Imports
-section in DESCRIPTION file.
+Scans all files in \code{R/} for used packages (searching for \code{::} syntax) and scans
+\code{NAMESPACE} file for import and importFrom statements.
+Then writes dependencies to \code{Imports} section in \code{DESCRIPTION} file.
 }
 \details{
 Make sure to import all dependencies or use the explicit \code{::} syntax when

@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_dependencies.R
 \name{get_dependencies}
 \alias{get_dependencies}
-\title{Returns all packages used by the package.}
+\title{Return all dependency packages.}
 \usage{
 get_dependencies(pkg = ".")
 }
@@ -14,8 +14,8 @@ get_dependencies(pkg = ".")
 A character vector with the packages used in the package.
 }
 \description{
-Scans all files in R/ for used packages (searching for :: syntax) and scans
-NAMESPACE file for import and importFrom.
+Scans all files in \code{R/} for used packages (searching for \code{::} syntax) and scans
+\code{NAMESPACE} file for import and importFrom statements.
 }
 \details{
 Make sure to import all dependencies or use the explicit \code{::} syntax when

@@ -1,10 +1,9 @@
-#' Returns all packages used by the package.
+#' Return all dependency packages.
 #'
-#' Scans all files in R/ for used packages (searching for :: syntax) and scans
-#' NAMESPACE file for import and importFrom.
+#' Scans all files in `R/` for used packages (searching for `::` syntax) and scans
+#' `NAMESPACE` file for import and importFrom statements.
 #'
-#' Make sure to import all dependencies or use the explicit `::` syntax when
-#' calling functions from other packages and to generate the `NAMESPACE` first.
+#' @inherit write_dependencies details
 #'
 #' @inheritParams write_dependencies
 #'
