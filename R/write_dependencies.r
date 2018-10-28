@@ -25,5 +25,5 @@ write_dependencies <- function(pkg = ".") {
     deps <- data.frame(type = character(0), package = character(0), version = character(0))
   }
   message("Updating ", pkg$package, " DESCRIPTION")
-  desc::desc_set_deps(deps)
+  desc::desc_set_deps(deps, file = pkg$path)
 }
