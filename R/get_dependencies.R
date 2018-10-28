@@ -22,7 +22,7 @@ get_dependencies <- function(pkg = ".") {
 
 get_dependencies_r <- function(pkg.path) {
   files <- list.files(file.path(pkg.path, "R"))
-  purrr::map(files, ~parse(file.path("R", .)) %>%
+  purrr::map(files, ~parse(file.path(pkg.path, "R", .)) %>%
                as.character %>%
                stringr::str_extract_all("[a-zA-Z][a-zA-Z0-9\\.]+(?=::)")) %>%
     unlist %>%
