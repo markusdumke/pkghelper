@@ -10,7 +10,6 @@
 #' @inheritParams devtools::document
 #'
 #' @export
-#' @import magrittr
 #'
 #' @examples
 #' \dontrun{

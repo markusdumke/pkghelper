@@ -9,10 +9,11 @@
 #'
 #' @return A character vector with the packages used in the package.
 #' @export
+#' @importFrom magrittr "%>%"
 #'
 #' @examples
 #' \dontrun{
-#' get_dependencies
+#' get_dependencies()
 #' }
 get_dependencies <- function(pkg = ".") {
   pkg <- devtools::as.package(pkg)

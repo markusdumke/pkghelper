@@ -3,4 +3,4 @@
 export(document)
 export(get_dependencies)
 export(write_dependencies)
-import(magrittr)
+importFrom(magrittr,"%>%")

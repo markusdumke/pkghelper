@@ -23,6 +23,6 @@ calling functions from other packages and to generate the \code{NAMESPACE} first
 }
 \examples{
 \dontrun{
-get_dependencies
+get_dependencies()
 }
 }
