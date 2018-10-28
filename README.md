@@ -3,6 +3,8 @@
 pkghelper
 =========
 
+[![Travis build status](https://travis-ci.org/markusdumke/pkghelper.svg?branch=master)](https://travis-ci.org/markusdumke/pkghelper)
+
 Installation
 ------------
 
