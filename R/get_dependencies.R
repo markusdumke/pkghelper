@@ -45,5 +45,5 @@ get_dependencies_namespace <- function(pkg.path) {
     unlist %>%
     unique
 
-  sort(unique(imports, imports.from))
+  sort(unique(c(imports, imports.from)))
 }
