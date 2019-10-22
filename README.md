@@ -1,12 +1,15 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-pkghelper
-=========
 
-[![Travis build status](https://travis-ci.org/markusdumke/pkghelper.svg?branch=master)](https://travis-ci.org/markusdumke/pkghelper)
+# pkghelper
 
-Installation
-------------
+<!-- badges: start -->
+
+[![Lifecycle:
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+<!-- badges: end -->
+
+## Installation
 
 You can install the package from Github with
 
@@ -14,12 +17,14 @@ You can install the package from Github with
 devtools::install_github("markusdumke/pkghelper")
 ```
 
-Usage
------
+## Usage
 
-Currently the package includes functions which scan the R code in the package for all packages in use and writes these packages to the Imports field of the DESCRIPTION file.
+Currently the package includes functions which scan the R code in the
+package for all packages in use and writes these packages to the Imports
+field of the DESCRIPTION file.
 
-Together with `devtools` and `roxygen2` this package helps to make the R package generation process more automatically.
+Together with `devtools` and `roxygen2` this package helps to make the R
+package generation process more automatically.
 
 ``` r
 library(pkghelper)

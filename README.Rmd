@@ -15,7 +15,9 @@ knitr::opts_chunk$set(
 
 # pkghelper
 
-[![Travis build status](https://travis-ci.org/markusdumke/pkghelper.svg?branch=master)](https://travis-ci.org/markusdumke/pkghelper)
+<!-- badges: start -->
+  [![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+  <!-- badges: end -->
 
 ## Installation
 
